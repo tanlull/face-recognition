@@ -15,17 +15,38 @@ person2_face_encoding = face_recognition.face_encodings(person2_image)[0]
 person3_image = face_recognition.load_image_file("imm.png")
 person3_face_encoding = face_recognition.face_encodings(person3_image)[0]
 
+person4_image = face_recognition.load_image_file("kwan.jpg")
+person4_face_encoding = face_recognition.face_encodings(person4_image)[0]
+
+# โหลดภาพ Stop.jpg และให้ระบบจดจำใบหน้า
+person5_image = face_recognition.load_image_file("baworn.jpg")
+person5_face_encoding = face_recognition.face_encodings(person5_image)[0]
+
+person6_image = face_recognition.load_image_file("kong.jpg")
+person6_face_encoding = face_recognition.face_encodings(person6_image)[0]
+
+person7_image = face_recognition.load_image_file("Songwut.jpg")
+person7_face_encoding = face_recognition.face_encodings(person7_image)[0]
+
 # สร้าง arrays ของคนที่จดจำและกำหนดชื่อ ตามลำดับ
 known_face_encodings = [
     person1_face_encoding,
     person2_face_encoding,
     person3_face_encoding,
+    person4_face_encoding,
+    person5_face_encoding,
+    person6_face_encoding,
+    person7_face_encoding
 ]
 
 known_face_names = [
-    "tan",
-    "poo",
-    "imm"
+    "Tanya",
+    "Poo",
+    "Imm",
+    "Kwan",
+    "Baworn",
+    "Kong",
+    "Dr.Songwut"
 ]
 
 # ตัวแปรเริ่มต้น
